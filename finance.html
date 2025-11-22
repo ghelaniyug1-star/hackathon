@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Finance - Log Expenditure</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="headh1">Finance</h1>
+    <a href="index.html" class="ancor">Back to Dashboard</a>
+  </header>
+
+  <main class="container">
+    <form method="post" action="api/add_expenditure.php" enctype="multipart/form-data">
+      <label>Milestone ID <input type="number" name="milestone_id" required></label>
+      <label>Amount <input type="number" step="0.01" name="amount" required></label>
+      <label>Paid Date <input type="date" name="paid_date" required></label>
+      <label>Vendor <input type="text" name="vendor"></label>
+      <label>Invoice file <input type="file" name="invoice"></label>
+      <button type="submit">Save Expenditure</button>
+    </form>
+  </main>
+</body>
+</html>

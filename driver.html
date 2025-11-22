@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Driver Management</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="logo">
+      
+    </div>
+    <h1 class="headh1">Driver</h1>
+    <a href="index.html" class="ancor">Back to Dashboard</a>
+  </header>
+
+<div class="container">
+<h2>Driver Registration</h2>
+
+<input type="text" id="name" placeholder="Driver Name">
+<input type="text" id="phone" placeholder="Phone Number">
+<input type="text" id="vehicle" placeholder="Vehicle Number">
+
+<button onclick="addDriver()">Add Driver</button>
+
+<h3>Driver List</h3>
+<table border="1" width="100%" id="driverTable">
+<tr>
+<th>ID</th><th>Name</th><th>Phone</th><th>Vehicle</th>
+</tr>
+</table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

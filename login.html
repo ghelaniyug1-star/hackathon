@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+     <header class="topbar">
+    <div class="logo">
+      
+    </div>
+    <h1 class="headh1">Login Page</h1>
+    <a href="index.html" class="ancor">Back to Dashboard</a>
+  </header>
+    <div class="box">
+    <h2 style="text-align:center">Login</h2>
+    <input type="text" id="username" placeholder="Enter Username">
+    <input type="password" id="password" placeholder="Enter Password">
+    <p id="msg" style="color:red;text-align:center;"></p>
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Logout</button>
+</div>
+ <script src="assets/js/main.js">
+    function logout() {
+    localStorage.removeItem("token");
+    window.location.href = "login.html";}
+    
+if (!localStorage.getItem("token")) {
+    window.location.href = "login.html";
+}</script>
+</body>
+</html>
